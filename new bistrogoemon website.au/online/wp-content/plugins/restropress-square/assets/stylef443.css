@@ -1,0 +1,103 @@
+
+#quare-form-container .label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5;
+  text-transform: uppercase;
+}
+
+div.rpress-sqaure-field {
+  float: left;
+  width: calc((100% - 48px) / 3);
+  padding: 0;
+  margin: 0 16px 16px 0;
+}
+
+#quare-form-container .rpress-sqaure-field:last-of-type {
+  margin-right: 0;
+}
+
+/* Define how SqPaymentForm iframes should look */
+.sq-input {
+  box-sizing: border-box;
+  border: 1px solid #E0E2E3;
+  border-radius: 4px;
+  outline-offset: -2px;
+  display: inline-block;
+  -webkit-transition: border-color .2s ease-in-out, background .2s ease-in-out;
+  -moz-transition: border-color .2s ease-in-out, background .2s ease-in-out;
+  -ms-transition: border-color .2s ease-in-out, background .2s ease-in-out;
+  transition: border-color .2s ease-in-out, background .2s ease-in-out;
+}
+
+/* Define how SqPaymentForm iframes should look when they have focus */
+.sq-input--focus {
+  border: 1px solid #4A90E2;
+  background-color: rgba(74,144,226,0.02);
+}
+
+
+/* Define how SqPaymentForm iframes should look when they contain invalid values */
+.sq-input--error {
+  border: 1px solid #E02F2F;
+  background-color: rgba(244,47,47,0.02);
+}
+
+#sq-card-number {
+  margin-bottom: 16px;
+}
+
+/* Customize the "Pay with Credit Card" button */
+#rpress-sq-creditcard {
+  display: inline-block;
+  padding: 9px 24px !important;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.button-credit-card:hover {
+  background-color: #4281CB;
+}
+
+/* Error Css Class */
+#error,#square-form-container #sq-error-fields {
+  width: 100%;
+  margin-top: 16px;
+  font-size: 16px;
+  color: red;
+  font-weight: 500;
+  text-align: center;
+  opacity: 0.8;
+}
+/* Hide Square nonce field on main form */
+#rpress-square-nonce-wrap {
+  display:none !important;
+}
+
+/* Overlay CSS */
+
+#sq-overlay {
+  width:100%;
+  height:100%;
+  position:absolute;
+  z-index:10;
+  background-color:rgba(0,0,0,0.3);
+  display:none;
+}

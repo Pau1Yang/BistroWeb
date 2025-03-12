@@ -1,0 +1,215 @@
+a {
+  color: #ffb606;
+}
+a:hover {
+  color: #525252;
+}
+.sp-megamenu-parent > li.active > a,
+.sp-megamenu-parent > li:hover > a {
+  color: #ffb606;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item > a:hover {
+  color: #ffb606;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item.active > a {
+  color: #ffb606;
+}
+#offcanvas-toggler > i {
+  color: #fff;
+}
+#offcanvas-toggler > i:hover {
+  color: #ffb606;
+}
+.btn-primary,
+.sppb-btn-primary {
+  border-color: #e6a300;
+  background-color: #ffb606;
+}
+.btn-primary:hover,
+.sppb-btn-primary:hover {
+  border-color: #b98200;
+  background-color: #d29400;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item.active:hover > a {
+  color: #ffb606;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item.active > a:hover {
+  color: #ffb606;
+}
+body.onepage .sp-megamenu-parent .sp-dropdown li.sp-menu-item.active > a:hover {
+  color: #ffb606;
+}
+.mar_box_two .sppb-col-sm-6 a.custom_button:hover {
+  background-color: #ffb606;
+  border-color: #ffb606;
+}
+ul.social-icons > li a:hover {
+  color: #ffb606;
+}
+.sp-page-title {
+  background-position: 50% 0;
+}
+.layout-boxed .body-innerwrapper {
+  background: #ffb606;
+}
+.sp-module ul > li > a {
+  color: #ffffff;
+}
+.sp-module ul > li > a:hover {
+  color: #ffb606;
+}
+.sp-module .latestnews > div > a {
+  color: #ffffff;
+}
+.sp-module .latestnews > div > a:hover {
+  color: #ffb606;
+}
+.sp-module .tagscloud .tag-name:hover {
+  background: #ffb606;
+}
+.sp-simpleportfolio .sp-simpleportfolio-filter > ul > li.active > a,
+.sp-simpleportfolio .sp-simpleportfolio-filter > ul > li > a:hover {
+  background: #ffb606;
+}
+.search .btn-toolbar button {
+  background: #ffb606;
+}
+.post-format {
+  background: #ffb606;
+}
+.voting-symbol span.star.active:before {
+  color: #ffb606;
+}
+.sp-rating span.star:hover:before,
+.sp-rating span.star:hover ~ span.star:before {
+  color: #d29400;
+}
+.entry-link,
+.entry-quote {
+  background: #ffb606;
+}
+blockquote {
+  border-color: #ffb606;
+}
+.carousel-left:hover,
+.carousel-right:hover {
+  background: #ffb606;
+}
+#sp-footer {
+  background: #ffb606;
+}
+.sp-comingsoon body {
+  font-family: Roboto;
+}
+.pagination > li > a,
+.pagination > li > span {
+  color: #ffffff;
+}
+.pagination > li > a:hover,
+.pagination > li > a:focus,
+.pagination > li > span:hover,
+.pagination > li > span:focus {
+  color: #ffffff;
+}
+.pagination > .active > a,
+.pagination > .active > span {
+  border-color: #ffb606;
+  background-color: #ffb606;
+}
+.pagination > .active > a:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:hover,
+.pagination > .active > span:focus {
+  border-color: #ffb606;
+  background-color: #ffb606;
+}
+.heading__secondary {
+  color: #ffb606;
+}
+.heading__primary .line-heading {
+  color: #ffb606;
+  background-color: #ffb606;
+}
+.posAbsolute:after {
+  background-color: #ffb606;
+}
+.sppb-btn-default {
+  color: #ffb606;
+}
+.sppb-btn-default:hover {
+  background-color: #ffb606;
+  border-color: #ffb606;
+}
+.event-slide-bounce .item-event .content-right {
+  background-color: #ffb606;
+}
+.home-slider .sppb-carousel-pro-text h2 {
+  color: #ffb606;
+}
+.home-slider .sppb-carousel-pro-text a.sppb-btn {
+  background-color: #ffb606;
+}
+#sp-main-body #sp-component .text-background .sppb-row .otw-wrapper .otreservations-submit {
+  background-color: #ffb606;
+  border-color: #ffb606;
+}
+#sp-footer {
+  background-image: url(images/bg_footer_1.html);
+}
+#sp-footer .top-footer i {
+  color: #ffffff;
+}
+#sp-footer .adress-footer {
+  color: #ffffff;
+}
+#sp-footer .social-icons li a i {
+  color: #ffffff;
+}
+#sp-footer .social-icons li a:hover i {
+  color: #ffb606;
+}
+#sp-footer .sp-copyright .text-copyright.border-copyright a {
+  color: #ffb606;
+}
+.sppb-menutab-addon .sppb-addon-content .sppb-nav.sppb-nav-pills .active a,
+.sppb-menutab-addon .sppb-addon-content .sppb-nav.sppb-nav-pills li:hover a {
+  color: #ffb606;
+}
+.video_text_heading .bg-video-play::before {
+  color: #ffb606;
+}
+.video_text_heading .bg-video-play {
+  border-color: #ffb606;
+}
+#sp-main-body #sp-component section#contact form fieldset p .btn-custom {
+  background-color: #ffb606;
+}
+.text-background-black .bottomtabs ul.sppb-nav-tabs li.active a,
+.text-background-black .bottomtabs ul.sppb-nav-tabs li a:hover {
+  border-color: #ffb606;
+  color: #ffb606;
+}
+#sp-ob-subscribe {
+  background-color: #ffb606 !important;
+}
+.home-slider.white-color .sppb-carousel-pro-text a.sppb-btn:hover {
+  background-color: #ffb606;
+}
+.home-slider.color_text.white-color .sppb-carousel-pro-text h2.title-slider {
+  color: #ffb606;
+}
+.sp-module ul > li > a:hover {
+  color: #ffb606 !important;
+}
+.footer-white .event-slide-bounce .item-event .content-item h3 a {
+  color: #ffb606;
+}
+.from_blog .article-title-wrapper a:hover {
+  color: #ffb606;
+}
+.text-background.box_winery .heading__secondary {
+  color: #ffb606;
+}
+.box_winery .event-slide-bounce .item-event .content-item h3 a {
+  color: #ffb606;
+}
