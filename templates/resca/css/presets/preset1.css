@@ -213,3 +213,26 @@ blockquote {
 .box_winery .event-slide-bounce .item-event .content-item h3 a {
   color: #ffb606;
 }
+/* 默认样式 */
+.sppb-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+/* 针对手机端的调整 */
+@media (max-width: 768px) {
+    .sppb-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .sppb-carousel-caption {
+        padding: 10px;
+        position: relative;
+        z-index: 10;
+    }
+}
