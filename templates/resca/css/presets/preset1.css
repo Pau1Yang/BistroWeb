@@ -220,19 +220,13 @@ blockquote {
     margin: 10px;
 }
 
-/* 针对手机端的调整 */
-@media (max-width: 768px) {
-    .sppb-btn {
-        font-size: 14px;
-        padding: 8px 16px;
-        width: 100%;
-        text-align: center;
-        margin: 10px 0;
-    }
 
-    .sppb-carousel-caption {
-        padding: 10px;
-        position: relative;
-        z-index: 10;
-    }
+
+@media (max-width: 768px) {
+  .sppb-btn {
+      width: 100%;
+      font-size: 12px;
+      padding: 8px 10px;
+      word-break: break-word;
+  }
 }
