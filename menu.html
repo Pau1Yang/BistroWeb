@@ -92,7 +92,7 @@
 				(i[r].q = i[r].q || []).push(arguments)
 			}, i[r].l = 1 * new Date(); a = s.createElement(o),
 				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 		ga('create', 'UA-78551257-1', 'www.bistrogoemon.com.html');
 		ga('send', 'pageview');
 		/*===  EASY GOOGLE ANALYTICS : END TRACKING CODE  ===*/
@@ -190,7 +190,7 @@
 				<div id="sp-title" class="col-sm-12 col-md-12">
 					<div class="sp-column ">
 						<div class="sp-page-title sp-parallax" style="background-color: transparent;">
-							<div class="wrap_page"><img src=images/e49m_5817.jpg><span class="overlay-top-header"
+							<div class="wrap_page"><img src="images/e49m_5817.jpg" alt=""><span class="overlay-top-header"
 									style="color: #fff;"></span>
 								<div class="page-title-wrapper">
 									<div class="banner-wrapper container" data-300="opacity: 0" data-0="opacity: 1">
@@ -288,17 +288,19 @@
 															<div id="sppb-addon-1550386290530" class="clearfix ">
 																<div class="sppb-addon sppb-addon-text-block  ">
 																	<div class="sppb-addon-content">
-																		<div style="width: 100%">Click <A
-																				href="images/NewDrinks.pdf">here</A> to
-																			download.<BR><iframe width="100%"
-																				height="400" src="images/NewDrinks.pdf"
+																		<div style="width: 100%">Click <a
+																				href="images/NewDrinks.pdf">here</a> to
+																			download.<br><iframe class="lazy-pdf" width="100%"
+																				height="400" data-src="images/NewDrinks.pdf"
+																				loading="lazy" tabindex="-1"
 																				frameborder="0" scrolling="no"
 																				marginheight="0"
 																				marginwidth="0"></iframe></div><br />
-																		<div style="width: 100%">Click <A
-																				href="images/Menu.pdf">here</A> to
-																			download.<BR><iframe width="100%"
-																				height="400" src="images/Menu.pdf"
+																		<div style="width: 100%">Click <a
+																				href="images/Menu.pdf">here</a> to
+																			download.<br><iframe class="lazy-pdf" width="100%"
+																				height="400" data-src="images/Menu.pdf"
+																				loading="lazy" tabindex="-1"
 																				frameborder="0" scrolling="no"
 																				marginheight="0"
 																				marginwidth="0"></iframe></div><br />
@@ -329,10 +331,11 @@
 															<div id="sppb-addon-1550386290539" class="clearfix ">
 																<div class="sppb-addon sppb-addon-text-block  ">
 																	<div class="sppb-addon-content">
-																		<div style="width: 100%">Click <A
-																				href="images/LUNCHMENU.pdf">here</A> to
-																			download.<BR><iframe width="100%"
-																				height="400" src="images/LUNCHMENU.pdf"
+																		<div style="width: 100%">Click <a
+																				href="images/LUNCHMENU.pdf">here</a> to
+																			download.<br><iframe class="lazy-pdf" width="100%"
+																				height="400" data-src="images/LUNCHMENU.pdf"
+																				loading="lazy" tabindex="-1"
 																				frameborder="0" scrolling="no"
 																				marginheight="0"
 																				marginwidth="0"></iframe></div><br />
@@ -363,10 +366,11 @@
 															<div id="sppb-addon-1554124926039" class="clearfix ">
 																<div class="sppb-addon sppb-addon-text-block  ">
 																	<div class="sppb-addon-content">
-																		<div style="width: 100%">Click <A
-																				href="images/TA.pdf">here</A> to
-																			download.<BR><iframe width="100%"
-																				height="400" src="images/TA.pdf"
+																		<div style="width: 100%">Click <a
+																				href="images/TA.pdf">here</a> to
+																			download.<br><iframe class="lazy-pdf" width="100%"
+																				height="400" data-src="images/TA.pdf"
+																				loading="lazy" tabindex="-1"
 																				frameborder="0" scrolling="no"
 																				marginheight="0"
 																				marginwidth="0"></iframe></div><br />
@@ -397,11 +401,12 @@
 															<div id="sppb-addon-1550386290550" class="clearfix ">
 																<div class="sppb-addon sppb-addon-text-block  ">
 																	<div class="sppb-addon-content">
-																		<div style="width: 100%">Click <A
-																				href="images/VegetarianANDGlutenFree.pdf">here</A>
-																			to download.<BR><iframe width="100%"
+																		<div style="width: 100%">Click <a
+																				href="images/VegetarianANDGlutenFree.pdf">here</a>
+																			to download.<br><iframe class="lazy-pdf" width="100%"
 																				height="400"
-																				src="images/VegetarianANDGlutenFree.pdf"
+																				data-src="images/VegetarianANDGlutenFree.pdf"
+																				loading="lazy" tabindex="-1"
 																				frameborder="0" scrolling="no"
 																				marginheight="0"
 																				marginwidth="0"></iframe></div><br />
@@ -473,6 +478,49 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Lazy-load PDFs to prevent focus/scroll jumps -->
+		<script>
+		(function () {
+		  var lazyIframes = [].slice.call(document.querySelectorAll('iframe[data-src]'));
+
+		  function loadIframe(el) {
+		    if (!el || !el.dataset || !el.dataset.src) return;
+		    el.src = el.dataset.src;
+		    el.removeAttribute('data-src');
+		  }
+
+		  if ('IntersectionObserver' in window) {
+		    var io = new IntersectionObserver(function (entries) {
+		      entries.forEach(function (entry) {
+		        if (entry.isIntersecting) {
+		          loadIframe(entry.target);
+		          io.unobserve(entry.target);
+		        }
+		      });
+		    }, { rootMargin: '200px 0px' });
+
+		    lazyIframes.forEach(function (el) { io.observe(el); });
+		  } else {
+		    var first = function () {
+		      lazyIframes.forEach(loadIframe);
+		      window.removeEventListener('scroll', first, { passive: true });
+		      window.removeEventListener('mousemove', first);
+		      window.removeEventListener('touchstart', first);
+		    };
+		    window.addEventListener('scroll', first, { passive: true });
+		    window.addEventListener('mousemove', first);
+		    window.addEventListener('touchstart', first, { passive: true });
+		  }
+
+		  // 保底：页面初次加载完若无 hash，保持在顶部
+		  window.addEventListener('load', function () {
+		    if (!location.hash) {
+		      window.scrollTo(0, 0);
+		    }
+		  }, { once: true });
+		})();
+		</script>
 	</div>
 
 </body>
@@ -480,3 +528,4 @@
 <!-- Mirrored from www.bistrogoemon.com.au/menu.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Mar 2025 03:27:41 GMT -->
 
 </html>
+
